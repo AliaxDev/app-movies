@@ -40,7 +40,7 @@
             const article = e.target.closest('article')
             const id = article.dataset.id
 
-            fetch(`http://localhost:1234/movies/${id}`, {
+            fetch(`https://app-movies-1.vercel.app/movies/${id}`, {
               method: 'DELETE'
             })
               .then(res => {
