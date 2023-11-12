@@ -59,7 +59,9 @@ app.get('/movies', (req, res) => {
 
 //pagina de inicio
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    console.log('push')
+    res.sendFile('./web/index.html');
+
 });
 
 
