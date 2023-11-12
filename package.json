@@ -5,7 +5,8 @@
   "main": "1.http.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "node --watch app.js"
+    "dev": "node --watch app.js",
+    "build": "node app.js"
   },
   "keywords": [],
   "author": "",
