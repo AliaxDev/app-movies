@@ -61,6 +61,7 @@ app.get('/movies', (req, res) => {
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/web/index.html');
+    console.log('connect')
 });
 
 
