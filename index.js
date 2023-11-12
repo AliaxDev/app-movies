@@ -12,6 +12,10 @@ const PORT = process.env.PORT ?? 1234
 
 //middleware
 const app = express()
+
+//read static file
+app.use(express.static('web'));
+
 app.use(express.json())
 app.use(cors({
     origin: (origin, callback) => {
