@@ -58,12 +58,10 @@ app.get('/movies', (req, res) => {
 */
 
 //pagina de inicio
+
 app.get('/', (req, res) => {
-
-    res.send('funciona');
-
+    res.sendFile(__dirname + '/web/index.html');
 });
-
 
 
 //Recuperar todas las pelicula de un Genero
