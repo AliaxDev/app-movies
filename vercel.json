@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "./app.js",
+            "use": "@vervel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "use": "/"
+        }
+    ]
+}
