@@ -56,6 +56,12 @@ app.get('/movies', (req, res) => {
 })
 */
 
+//pagina de inicio
+app.get('/', (req, res) => {
+    app.use(express.static('web'));
+})
+
+
 //Recuperar todas las pelicula de un Genero
 app.get('/movies', (req, res) => {
     const { genre } = req.query
