@@ -18,7 +18,7 @@
     }
   </style>
   <script type="module">
-    fetch('http://localhost:1234/movies')
+    fetch('http://app-movies-1.vercel.app/movies')
       .then(res => res.json())
       .then(movies => {
         const html = movies.map(movie => {
