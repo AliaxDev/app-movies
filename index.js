@@ -24,7 +24,8 @@ app.use(cors({
             'http://127.0.0.1:5500',
             'http://localhost:1234',
             'https://movies.com',
-            'https://midu.dev'
+            'https://midu.dev',
+            'https://app-movies-1.vercel.app'
         ]
 
         if (ACCEPTED_ORIGINS.includes(origin)) {
@@ -58,8 +59,9 @@ app.get('/movies', (req, res) => {
 
 //pagina de inicio
 app.get('/', (req, res) => {
-    app.use(express.static('web'));
-})
+    res.sendFile(__dirname + '/index.html');
+});
+
 
 
 //Recuperar todas las pelicula de un Genero
