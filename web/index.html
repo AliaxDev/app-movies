@@ -10,7 +10,7 @@
       padding: 1rem;
       margin-bottom: 1rem;
     }
-    
+
     img {
       height: auto;
       width: 320px;
@@ -18,7 +18,7 @@
     }
   </style>
   <script type="module">
-    fetch('http://app-movies-1.vercel.app/movies')
+    fetch('https://app-movies-1.vercel.app/movies')
       .then(res => res.json())
       .then(movies => {
         const html = movies.map(movie => {
